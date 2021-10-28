@@ -34,7 +34,9 @@ function App() {
       <>
         <GlobalStyles />
        <ThemeDiv>
-       <ThemeButton id='theme' onClick={toggleTheme}>x</ThemeButton >
+       <ThemeButton id='theme' onClick={toggleTheme}>
+         {theme==='light' ? <img src='/assets/svg/moon.svg' alt='dark' /> : <img src='/assets/svg/sun.svg' alt='light'/>}
+       </ThemeButton >
        </ThemeDiv>
         <footer>
         </footer>
