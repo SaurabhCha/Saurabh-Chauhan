@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   display: flex;
-  justify-content: center;
-  margin: 20vh;
-  flex-direction: column;
+  justify-content: space-around;
+  margin: 25vh;
 `;
 
 export const HomeHeader = styled.div`
   font-size: 3rem;
-  display: contents;
+  display: block;
   &.blue {
     color: rgb(110, 87, 224);
   }
@@ -17,8 +16,8 @@ export const HomeHeader = styled.div`
 
 export const HomeDev = styled.div`
   font-size: 1.25rem;
-  margin-top: 10px;
-  display: inline;
+  margin-top: 15px;
+  display: block;
 `;
 
 export const BlueP = styled.p`
