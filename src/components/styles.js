@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   display: flex;
+  height: 40vh;
   justify-content: space-around;
   margin: 25vh;
 `;

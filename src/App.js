@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import styled ,{ ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './theme';
-import { GlobalStyles } from './global';
+import React, { useState } from "react";
+import styled, { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./theme";
+import { GlobalStyles } from "./global";
 import Home from "./components/Home";
 
 const ThemeDiv = styled.div`
@@ -9,6 +9,7 @@ const ThemeDiv = styled.div`
   justify-content: flex-end;
   padding-top: 30px;
   padding-right: 30px;
+  height: 10vh;
 `;
 
 const ThemeButton = styled.button`
@@ -16,32 +17,34 @@ const ThemeButton = styled.button`
   width: 40px;
   border-radius: 20%;
   border: none;
-`
+`;
 
 function App() {
-
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
+    if (theme === "light") {
+      setTheme("dark");
     } else {
-      setTheme('light');
+      setTheme("light");
     }
-  }
-  
+  };
+
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-       <ThemeDiv>
-       <ThemeButton id='theme' onClick={toggleTheme}>
-         {theme==='light' ? <img src='/assets/svg/moon.svg' alt='dark' /> : <img src='/assets/svg/sun.svg' alt='light'/>}
-       </ThemeButton >
-       </ThemeDiv>
-       <Home />
-        <footer>
-        </footer>
+        <ThemeDiv>
+          <ThemeButton id="theme" onClick={toggleTheme}>
+            {theme === "light" ? (
+              <img src="/assets/svg/moon.svg" alt="dark" />
+            ) : (
+              <img src="/assets/svg/sun.svg" alt="light" />
+            )}
+          </ThemeButton>
+        </ThemeDiv>
+        <Home />
+        <footer></footer>
       </>
     </ThemeProvider>
   );
