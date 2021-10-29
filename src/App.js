@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styled ,{ ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
+import Home from "./components/Home";
 
 const ThemeDiv = styled.div`
   display: flex;
@@ -38,6 +39,7 @@ function App() {
          {theme==='light' ? <img src='/assets/svg/moon.svg' alt='dark' /> : <img src='/assets/svg/sun.svg' alt='light'/>}
        </ThemeButton >
        </ThemeDiv>
+       <Home />
         <footer>
         </footer>
       </>
