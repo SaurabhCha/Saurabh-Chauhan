@@ -6,12 +6,13 @@ import {
   LinksContainer,
   BlueP,
   IntroImage,
+  IntroDiv,
 } from "./styles";
 
 function Home() {
   return (
     <HomeContainer>
-      <div>
+      <IntroDiv>
         <TextHeader>
           <BlueP>Hi</BlueP>, I'm Saurabh
         </TextHeader>
@@ -54,7 +55,7 @@ function Home() {
             />
           </a>
         </LinksContainer>
-      </div>
+      </IntroDiv>
       <div>
         <IntroImage src="/assets/images/home.png" alt="home" />
       </div>

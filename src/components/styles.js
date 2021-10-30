@@ -4,7 +4,7 @@ export const HomeContainer = styled.div`
   display: flex;
   height: 40vh;
   justify-content: space-around;
-  margin: 25vh;
+  margin: 20vh 25vw 20vh 25vw;
 `;
 
 export const TextHeader = styled.div`
@@ -25,6 +25,10 @@ export const TextDiv = styled.div`
   &.about {
     max-width: 100%;
   }
+`;
+
+export const IntroDiv = styled.div`
+  align-self: center;
 `;
 
 export const BlueP = styled.p`
@@ -52,7 +56,7 @@ export const LinksContainer = styled.div`
 export const AboutContainer = styled.div`
   display: flex;
   height: 100vh;
-  margin: 35vh;
+  margin: 40vh 25vw 25vh 25vw;
   flex-direction: column;
   align-items: center;
 `;
@@ -76,6 +80,10 @@ export const CvButton = styled.a`
 export const IntroImage = styled.img`
   height: 300px;
   &.about {
-    margin-right: 20vw;
+    margin-right: 10vw;
   }
+`;
+
+export const IntroColumnDiv = styled.div`
+  max-width: 30vw;
 `;

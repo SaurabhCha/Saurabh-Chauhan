@@ -6,6 +6,7 @@ import {
   TextDiv,
   CvButton,
   IntroImage,
+  IntroColumnDiv,
 } from "./styles";
 
 function About() {
@@ -20,7 +21,7 @@ function About() {
             alt="about me"
           />
         </div>
-        <div>
+        <IntroColumnDiv>
           <TextDiv className="about">
             I'm a Passionate and emerging full stack web developer with a strong
             sense for aesthetics and interaction using HTML, CSS and JavaScript
@@ -29,7 +30,7 @@ function About() {
           <CvButton download href="assets/pdf/Resume_Sample.pdf">
             Download CV
           </CvButton>
-        </div>
+        </IntroColumnDiv>
       </AboutSubContainer>
     </AboutContainer>
   );
