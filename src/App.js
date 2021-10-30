@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyles } from "./global";
 import Home from "./components/Home";
+import About from "./components/About";
 
 const ThemeDiv = styled.div`
   display: flex;
@@ -44,6 +45,7 @@ function App() {
           </ThemeButton>
         </ThemeDiv>
         <Home />
+        <About />
         <footer></footer>
       </>
     </ThemeProvider>
