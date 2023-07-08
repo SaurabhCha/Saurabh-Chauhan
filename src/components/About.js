@@ -27,9 +27,9 @@ function About() {
             sense for aesthetics and interaction using HTML, CSS and JavaScript
             to build all aspects of a website.
           </TextDiv>
-          {/* <CvButton download href="assets/pdf/Resume_Sample.pdf">
+          <CvButton download href="assets/pdf/Resume_Sample.pdf">
             Download CV
-          </CvButton> */}
+          </CvButton>
         </IntroColumnDiv>
       </AboutSubContainer>
     </AboutContainer>
