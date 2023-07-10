@@ -8,6 +8,7 @@ import {
   IntroImage,
   IntroColumnDiv,
 } from "./styles";
+import Skills from "./Skills";
 
 function About() {
   return (
@@ -32,6 +33,7 @@ function About() {
           </CvButton>
         </IntroColumnDiv>
       </AboutSubContainer>
+      <Skills />
     </AboutContainer>
   );
 }

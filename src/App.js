@@ -18,6 +18,7 @@ const ThemeButton = styled.button`
   width: 40px;
   border-radius: 20%;
   border: none;
+  cursor: pointer;
 `;
 
 function App() {

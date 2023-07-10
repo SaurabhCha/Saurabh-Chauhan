@@ -87,3 +87,15 @@ export const IntroImage = styled.img`
 export const IntroColumnDiv = styled.div`
   max-width: 30vw;
 `;
+
+export const SkillsContainer = styled.div`
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  .svgIcon {
+    height: 80px;
+    width: auto;
+    margin-right: 10px;
+    transition: transform 0.5s ease-in;
+  }
+`;
