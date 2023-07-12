@@ -88,14 +88,35 @@ export const IntroColumnDiv = styled.div`
   max-width: 30vw;
 `;
 
-export const SkillsContainer = styled.div`
-  margin-top: 30px;
+// background: #e2e2e2;
+export const SKillsMainDiv = styled.div`
+  border-radius: 5px;
+  background-color: rgba(82, 83, 96, 255);
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+`;
+
+export const SkillsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   .svgIcon {
     height: 80px;
     width: auto;
-    margin-right: 10px;
-    transition: transform 0.5s ease-in;
+  }
+`;
+
+export const Skill = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px 4px;
+  :hover {
+    transform: translateY(-1rem) scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
 `;
