@@ -10,7 +10,7 @@ import {
 } from "./styles";
 import Skills from "./Skills";
 
-function About() {
+function About(props) {
   return (
     <AboutContainer>
       <TextHeader className="aboutMe">About Me</TextHeader>
@@ -33,7 +33,7 @@ function About() {
           </CvButton>
         </IntroColumnDiv>
       </AboutSubContainer>
-      <Skills />
+      <Skills {...props} />
     </AboutContainer>
   );
 }

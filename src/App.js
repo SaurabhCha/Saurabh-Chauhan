@@ -46,7 +46,7 @@ function App() {
           </ThemeButton>
         </ThemeDiv>
         <Home />
-        <About />
+        <About theme={theme} />
         <footer></footer>
       </>
     </ThemeProvider>

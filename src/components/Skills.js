@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { SkillsContainer, Skill, SKillsMainDiv, TextHeader } from "./styles";
 
 // Can add Bootstrap and MUI
-function Skills() {
+function Skills(props) {
+  const [theme, setTheme] = useState("");
+  useEffect(() => {
+    setTheme(props.theme);
+  }, [props.theme]);
+
   return (
     <SKillsMainDiv>
       <TextHeader>Key Skills</TextHeader>
