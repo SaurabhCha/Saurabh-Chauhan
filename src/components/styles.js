@@ -5,6 +5,7 @@ export const HomeContainer = styled.div`
   height: 40vh;
   justify-content: space-around;
   margin: 20vh 25vw 20vh 25vw;
+  align-items: center;
 `;
 
 export const TextHeader = styled.div`
@@ -15,6 +16,12 @@ export const TextHeader = styled.div`
   }
   &.aboutMe {
     margin-bottom: 5vh;
+  }
+  &.bottomMargin {
+    margin-bottom: 20px;
+  }
+  &.italic {
+    font-style: italic;
   }
 `;
 
@@ -55,15 +62,17 @@ export const LinksContainer = styled.div`
 
 export const AboutContainer = styled.div`
   display: flex;
-  height: 100vh;
-  margin: 40vh 25vw 25vh 25vw;
+  min-height: 100vh;
+  margin: 40vh 15vw 25vh 15vw;
   flex-direction: column;
   align-items: center;
+  width: 70vw;
 `;
 
 export const AboutSubContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const CvButton = styled.a`
@@ -96,16 +105,32 @@ export const SKillsMainDiv = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  &.dark {
+    background-color: rgba(82, 83, 96, 255);
+  }
+  &.light {
+    background-color: #ececf5;
+  }
 `;
 
 export const SkillsContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 60vw;
   justify-content: space-around;
   .svgIcon {
     height: 80px;
     width: auto;
   }
+`;
+
+export const SkillsRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 `;
 
 export const Skill = styled.div`

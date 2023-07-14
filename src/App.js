@@ -4,6 +4,7 @@ import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyles } from "./global";
 import Home from "./components/Home";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 const ThemeDiv = styled.div`
   display: flex;
@@ -47,6 +48,7 @@ function App() {
         </ThemeDiv>
         <Home />
         <About theme={theme} />
+        <Contact theme={theme} />
         <footer></footer>
       </>
     </ThemeProvider>
