@@ -47,7 +47,7 @@ export const LinksContainer = styled.div`
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  width: 100px;
+  width: 70px;
   .svgIcon {
     height: 20px;
     width: auto;
@@ -144,4 +144,29 @@ export const Skill = styled.div`
     transform: translateY(-1rem) scale(1.03);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
+`;
+
+export const ConnectMainDiv = styled.div`
+  width: 60vw;
+  display: flex;
+  margin: 0 20vw;
+  flex-direction: column;
+`;
+
+export const ContactFormDiv = styled.div`
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const SendMessageButton = styled.a`
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: rgb(110, 87, 224);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 `;

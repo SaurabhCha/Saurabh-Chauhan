@@ -43,9 +43,16 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.text};
   }
+
+  input{
+    width: 40vw;
+    line-height: 2;
+    border-radius: 0.5rem;
+  }
+
+  textarea{
+    width: 40vw;
+    line-height: 3;
+    border-radius: 0.5rem;
+  }
 `;
-//body
-// display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;

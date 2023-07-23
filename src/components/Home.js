@@ -43,7 +43,7 @@ function Home() {
               alt="github"
             />
           </a>
-          <a
+          {/* <a
             href="https://wa.me/+918267930516"
             target="_blank"
             rel="noreferrer"
@@ -53,7 +53,7 @@ function Home() {
               src="/assets/svg/whatsapp.svg"
               alt="whatsapp"
             />
-          </a>
+          </a> */}
         </LinksContainer>
       </IntroDiv>
       <div>
