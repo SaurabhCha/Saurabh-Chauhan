@@ -155,9 +155,18 @@ export const ConnectMainDiv = styled.div`
 
 export const ContactFormDiv = styled.div`
   display: flex;
-  width: 50vw;
+  width: 40vw;
   align-items: center;
   flex-direction: column;
+  padding-top: 30px;
+  margin: 0 10vw 0 10vw;
+  & div {
+  }
+`;
+
+export const ContactDiv = styled.div`
+  width: 100%;
+  margin-bottom: 15px;
 `;
 
 export const SendMessageButton = styled.a`

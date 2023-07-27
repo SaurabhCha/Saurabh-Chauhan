@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   SkillsContainer,
   Skill,
@@ -7,11 +7,11 @@ import {
   SkillsRow,
 } from "./styles";
 
-function Skills(props) {
-  const [theme, setTheme] = useState("");
-  useEffect(() => {
-    setTheme(props.theme);
-  }, [props.theme]);
+function Skills({ theme }) {
+  // const [theme, setTheme] = useState("");
+  // useEffect(() => {
+  //   setTheme(props.theme);
+  // }, [props.theme]);
 
   return (
     <SKillsMainDiv className={theme === "dark" ? "dark" : "light"}>
