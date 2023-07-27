@@ -22,11 +22,6 @@ function Contact({ theme }) {
     return true;
   };
 
-  const inputStyle = {
-    color: textColor,
-    borderColor: "red !important",
-  };
-
   const [contact, setContact] = useState({
     name: "",
     email: "",
@@ -58,14 +53,11 @@ function Contact({ theme }) {
       <TextDiv>
         Hey there, hope you are doing good. Drop me a message below. Make it
         interesting, or keep it simple. I'll get back to you soon after I
-        receice your message. To connect on a social network, give them a tap.
+        receice your message.
       </TextDiv>
       <ContactFormDiv>
         <ContactDiv>
           <TextField
-            InputProps={{
-              style: inputStyle,
-            }}
             sx={{ border: "red" }}
             id="standard-basic"
             label="Name"
@@ -83,9 +75,6 @@ function Contact({ theme }) {
         </ContactDiv>
         <ContactDiv>
           <TextField
-            InputProps={{
-              style: inputStyle,
-            }}
             id="standard-basic"
             label="Email"
             variant="outlined"
@@ -102,9 +91,6 @@ function Contact({ theme }) {
         </ContactDiv>
         <ContactDiv>
           <TextField
-            InputProps={{
-              style: inputStyle,
-            }}
             id="standard-basic"
             label="Message"
             variant="outlined"
@@ -125,9 +111,6 @@ function Contact({ theme }) {
           Send Message
         </SendMessageButton>
       </ContactFormDiv>
-      <div>linkedin</div>
-      <div>insta</div>
-      <div>discord</div>
     </ConnectMainDiv>
   );
 }

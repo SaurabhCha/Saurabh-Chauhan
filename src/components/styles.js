@@ -149,6 +149,7 @@ export const Skill = styled.div`
 export const ConnectMainDiv = styled.div`
   width: 60vw;
   display: flex;
+  align-items: center;
   margin: 0 20vw;
   flex-direction: column;
 `;
