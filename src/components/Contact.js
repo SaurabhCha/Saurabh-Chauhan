@@ -68,7 +68,7 @@ function Contact({ theme }) {
               setNameTouched(true);
             }}
             error={nameTouched && nameError}
-            helperText={nameTouched && nameError ? "Mandatory Field" : ""}
+            helperText={nameTouched && nameError ? "Name Please" : ""}
           />
         </ContactDiv>
         <ContactDiv>
@@ -84,7 +84,9 @@ function Contact({ theme }) {
               setEmailTouched(true);
             }}
             error={emailTouched && emailError}
-            helperText={emailTouched && emailError ? "Mandatory Field" : ""}
+            helperText={
+              emailTouched && emailError ? "How will i ge back to you?" : ""
+            }
           />
         </ContactDiv>
         <ContactDiv>
@@ -102,7 +104,7 @@ function Contact({ theme }) {
               setMessageTouched(true);
             }}
             error={messageTouched && messageError}
-            helperText={messageTouched && messageError ? "Mandatory Field" : ""}
+            helperText={messageTouched && messageError ? "Say something" : ""}
           />
         </ContactDiv>
         <SendMessageButton onClick={handleSubmit}>
