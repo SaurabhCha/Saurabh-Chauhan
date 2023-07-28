@@ -159,10 +159,11 @@ export const ContactFormDiv = styled.div`
   width: 40vw;
   align-items: center;
   flex-direction: column;
-  padding-top: 30px;
+  padding: 30px;
+  border-radius: 10px;
   margin: 0 10vw 0 10vw;
-  & div {
-  }
+  background-image: linear-gradient(to top, #cfd9df 0%, #ececf5 100%);
+  margin-top: 20px;
 `;
 
 export const ContactDiv = styled.div`

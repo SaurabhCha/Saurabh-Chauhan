@@ -10,7 +10,6 @@ import {
 import TextField from "@mui/material/TextField";
 
 function Contact({ theme }) {
-  const textColor = theme === "light" ? "#363537" : "#FAFAFA";
   const [nameTouched, setNameTouched] = useState(false);
   const [emailTouched, setEmailTouched] = useState(false);
   const [messageTouched, setMessageTouched] = useState(false);
@@ -58,8 +57,7 @@ function Contact({ theme }) {
       <ContactFormDiv>
         <ContactDiv>
           <TextField
-            sx={{ border: "red" }}
-            id="standard-basic"
+            id="name"
             label="Name"
             variant="outlined"
             value={contact.name}
@@ -75,7 +73,7 @@ function Contact({ theme }) {
         </ContactDiv>
         <ContactDiv>
           <TextField
-            id="standard-basic"
+            id="email"
             label="Email"
             variant="outlined"
             value={contact.email}
@@ -91,7 +89,7 @@ function Contact({ theme }) {
         </ContactDiv>
         <ContactDiv>
           <TextField
-            id="standard-basic"
+            id="message"
             label="Message"
             variant="outlined"
             value={contact.message}
